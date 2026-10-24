@@ -52,8 +52,8 @@ def prepare(out, src=None, make=True, jobs=None):
         print("pka-helper: compiling DelPhiPKa (a few minutes) ...", flush=True)
         r = subprocess.run(["make", "-j", str(jobs or os.cpu_count() or 2)], cwd=out)
         if r.returncode != 0 or not os.path.isfile(os.path.join(out, "delphiPKa")):
-            raise RuntimeError("compiling DelPhiPKa failed (see the compiler output above). It needs a C++11 MPI compiler (mpic++) "
-                               "and the GNU Scientific Library with headers.")
+            raise RuntimeError("compiling DelPhiPKa failed (see the compiler output above). It needs a C++11 MPI compiler (mpic++), "
+                               "the GNU Scientific Library with headers and the Boost C++ headers.")
     return out
 
 
