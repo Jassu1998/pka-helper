@@ -35,9 +35,9 @@ class BuildWithDelphi(build_py):
                 import prepare_delphipka as P
                 P.prepare(work, os.environ.get("PKA_HELPER_DELPHIPKA_SRC") or None, make=True)
         except (RuntimeError, subprocess.CalledProcessError, OSError) as e:
-            sys.exit("pka-helper: %s\n  It needs git (to download DelPhiPKa v1.0 from its authors), a C++11 MPI compiler (mpic++) and the GNU "
-                     "Scientific Library, e.g.\n    sudo apt-get install git build-essential libopenmpi-dev openmpi-bin libgsl-dev\n"
-                     "    conda install -c conda-forge git compilers openmpi gsl make\n"
+            sys.exit("pka-helper: %s\n  It needs git (to download DelPhiPKa v1.0 from its authors), a C++11 MPI compiler (mpic++), the GNU "
+                     "Scientific Library and the Boost C++ headers, e.g.\n    sudo apt-get install git build-essential libopenmpi-dev openmpi-bin libgsl-dev libboost-dev\n"
+                     "    conda install -c conda-forge git compilers openmpi gsl libboost-headers make\n"
                      "  Or install without it: PKA_HELPER_SKIP_BUILD=1 pip install .  (see BUILDING.md)" % e)
         pkg = os.path.join(self.build_lib, "pka_helper")
         bindir = os.path.join(pkg, "bin"); os.makedirs(bindir, exist_ok=True)

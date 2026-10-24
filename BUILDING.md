@@ -6,14 +6,14 @@ it, and installs the program and its force-field files inside the package. You o
 it yourself.
 
 Requirements: git (or a downloaded copy of DelPhiPKa v1.0), a C++11 compiler with MPI (`mpic++`, OpenMPI or MPICH) and the GNU
-Scientific Library (GSL) with headers.
+Scientific Library (GSL) with headers, and the Boost C++ headers.
 
     # Debian / Ubuntu
-    sudo apt-get install git build-essential libopenmpi-dev openmpi-bin libgsl-dev
+    sudo apt-get install git build-essential libopenmpi-dev openmpi-bin libgsl-dev libboost-dev
     # Fedora / RHEL
-    sudo dnf install git gcc-c++ make openmpi-devel gsl-devel && module load mpi/openmpi-x86_64
+    sudo dnf install git gcc-c++ make openmpi-devel gsl-devel boost-devel && module load mpi/openmpi-x86_64
     # macOS (Homebrew)
-    brew install git open-mpi gsl          # then: GSL_PREFIX=$(brew --prefix gsl) pip install .
+    brew install git open-mpi gsl boost    # then: GSL_PREFIX=$(brew --prefix gsl) CPATH=$(brew --prefix)/include pip install .
 
 **No internet on the machine.** Download DelPhiPKa v1.0 elsewhere (`git clone https://github.com/delphi001/DelphiPka && git -C DelphiPka
 checkout v1.0`), copy it over, and point the installer at it:

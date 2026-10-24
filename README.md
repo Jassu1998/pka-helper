@@ -35,8 +35,8 @@ measured and simulated pKas. Every value comes with a confidence call, a note on
 
 ## Install
 
-You need **Linux or macOS**, **Python 3.8 or newer**, **git**, a **C++ compiler with MPI** (`mpic++`, from OpenMPI or MPICH) and the
-**GNU Scientific Library** (GSL, with headers), and an internet connection during installation.
+You need **Linux or macOS**, **Python 3.9 or newer**, **git**, a **C++ compiler with MPI** (`mpic++`, from OpenMPI or MPICH) and the
+**GNU Scientific Library** (GSL, with headers), the **Boost C++ headers**, and an internet connection during installation.
 
 pka-helper does not include DelPhiPKa. During installation it downloads DelPhiPKa v1.0 from its authors' repository
 (github.com/delphi001/DelphiPka), applies pka-helper's changes (`delphipka-patch/`) and compiles it, which takes a few minutes. DelPhiPKa
@@ -45,13 +45,13 @@ is used under its authors' terms (see [NOTICE.md](NOTICE.md)). Already have DelP
 
 **Debian / Ubuntu**
 
-    sudo apt-get install git build-essential libopenmpi-dev openmpi-bin libgsl-dev
+    sudo apt-get install git build-essential libopenmpi-dev openmpi-bin libgsl-dev libboost-dev
     cd pka-helper          # the folder you cloned or unpacked
     pip install .
 
 **conda (any Linux / macOS, no root needed)**
 
-    conda create -n pka -c conda-forge python=3.11 git compilers openmpi gsl make
+    conda create -n pka -c conda-forge python=3.11 git compilers openmpi gsl libboost-headers make
     conda activate pka
     cd pka-helper          # the folder you cloned or unpacked
     pip install .
@@ -63,7 +63,7 @@ is used under its authors' terms (see [NOTICE.md](NOTICE.md)). Already have DelP
 
     pka-helper doctor
 
-Every line should say `ok`. If git, the compiler or GSL is missing, `pip install .` stops with a message saying what to install. To install
+Every line should say `ok`. If git, the compiler, GSL or Boost is missing, `pip install .` stops with a message saying what to install. To install
 without building DelPhiPKa (for example, to use a binary built elsewhere), see [BUILDING.md](BUILDING.md).
 
 ---
