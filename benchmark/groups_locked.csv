@@ -1,0 +1,4 @@
+protein,structure,chains,group,members,ref_steps,source
+bR,1m0l.pdb,ABC,bR Glu194/Glu204 release group,GLU194 GLU204,9.6,experiment (highest step of the pair)
+M2,2l0j.pdb,ABCD,M2 His37 tetrad (2L0J),HIS37:A HIS37:B HIS37:C HIS37:D,8.2;8.2;6.3;<5,solid-state NMR (DMPC/DMPG)
+M2,3lbw.pdb,ABCD,M2 His37 tetrad (3LBW),HIS37:A HIS37:B HIS37:C HIS37:D,8.2;8.2;6.3;<5,solid-state NMR (DMPC/DMPG)

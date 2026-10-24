@@ -1,0 +1,4 @@
+recursive-include delphipka-patch *
+recursive-include delphipka *
+recursive-include src/pka_helper/param *
+include README.md BUILDING.md NOTICE.md LICENSE CITATION.cff

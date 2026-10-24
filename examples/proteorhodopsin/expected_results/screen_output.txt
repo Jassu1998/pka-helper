@@ -1,0 +1,36 @@
+[pka-helper] HETATM groups kept with a fixed charge (not titrated): LYR (+1) x1
+[pka-helper] membrane shape: flat (2 distinct dummy-atom heights)
+[pka-helper] 1/3 PROPKA (runs alongside the next step)
+[pka-helper] 2/3 membrane calculation (minutes to hours)
+[pka-helper] memory: about 0.5 GB per MPI rank (0.3 M base-grid points, 5.3 M map points, fill 90%); 7.5 GB free, so 13 rank(s) fit; 2 core(s)
+[pka-helper] using 2 MPI rank(s)
+[pka-helper] DelPhi energy stage: 12/26 sites (46%), 0min 10s elapsed, estimating time left ...
+[pka-helper] DelPhi energy stage finished: 0min 19s
+[pka-helper] carboxyl tautomers: other proton placement for 1 acid(s): ASP97A
+[pka-helper] carboxyl tautomers (neutral-state energy, kcal/mol: proton on OD1|OE1 / other O):
+[pka-helper]   ASP97 A    -0.30    -0.34  -> other O
+[pka-helper]   1 acid(s) switched; energies re-titrated (originals: *_fixed_proton.*)
+[pka-helper] 3/3 blend
+pka-helper: WARNING: structure checks: 1 deep-lipid - see results/structure_check.txt
+
+pH 7.0: 25 titratable groups, 22 confident, 3 uncertain (within 0.5 pK of pH or predictors disagree).
+'±' = estimated error (1 sigma, pK): about 2 in 3 true values lie within it and 19 in 20 within twice it, on the benchmark (tested on protein families left out of the fit). It grows for buried groups, His, membrane runs and when PROPKA and DelPhi disagree. 'P(prot)' = probability that the group is protonated at pH 7.0 from that error; near 0.5 the call is open. 'limits varied' = lowest - highest pKa when pka-helper's own limits on the DelPhi shift are varied ('unaffected' = the same with every setting); '!' = the pH 7.0 call flips within that range.
+State: P = protonated, D = deprotonated, ? = uncertain.   shift = pKa - PROPKA.   'check' = a structure warning (results/structure_check.txt).
+
+Groups where PROPKA and pka-helper disagree on the protonation state at pH 7.0
+
+  residue   chain  PROPKA  DelPhi     pKa      ± P(prot)  state limits varied  note
+  ASP227    A        8.23    4.41    4.41  ±3.22    0.21  D?    4.41 - 5.73    
+  GLU108    A        4.98   11.98    7.98  ±1.73    0.71  P?    6.98 - 8.98 !  lipid-facing: larger cap
+
+23 other groups: PROPKA and pka-helper agree at pH 7.0 (all values: results/pkas.txt); 1 of them is close to the pH or has a structure warning (results/uncertain_at_pH7.txt).
+
+Results in proteorhodopsin_2l6x_pka
+  results/pkas.txt                    every group: PROPKA, DelPhi, pKa, state, effect of the blend limits
+  results/comparison_with_propka.txt  side by side with PROPKA, biggest differences first
+  results/uncertain_at_pH7.txt        groups whose pH call depends on PROPKA vs DelPhi
+  results/structure_check.txt         input-structure problems that make a pKa unreliable
+  results/clusters.txt                coupled groups: stepwise (macroscopic) pKas to compare with stepwise measurements
+  results/pka_helper.csv              the same as a table for scripts
+  raw/                                DelPhiPKa calculation (raw/delphipka), PROPKA output, log.txt (details in log.txt; -v shows them live)
+(total time 0 min 41 s)

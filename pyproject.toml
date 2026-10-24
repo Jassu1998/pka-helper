@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pka-helper"
+version = "0.1.1a1"
+description = "Membrane-aware pKa prediction: PROPKA anchor plus a curved-membrane DelPhi calculation, blended within bounds"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Jasmine Aaltonen"}]
+readme = "README.md"
+keywords = ["pKa", "protonation", "membrane proteins", "Poisson-Boltzmann", "PROPKA", "DelPhiPKa"]
+classifiers = ["Development Status :: 3 - Alpha", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3",
+               "Topic :: Scientific/Engineering :: Chemistry", "Topic :: Scientific/Engineering :: Bio-Informatics"]
+dependencies = ["numpy", "scipy", "propka>=3.5"]
+
+[project.scripts]
+pka-helper = "pka_helper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pka_helper = ["param/*", "param/topology/*", "_tools/*.py", "bin/*"]

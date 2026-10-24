@@ -1,0 +1,92 @@
+group,protein,structure,chains,site,resname,resnum,ref,bound,in69,source
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 2,GLU,2,3.6,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 7,ASP,7,3.8,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 12,ASP,12,3.2,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 29,GLU,29,3.6,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 37,ASP,37,1.0,<,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 48,GLU,48,3.6,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 54,ASP,54,3.8,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 62,GLU,62,1.0,<,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 71,GLU,71,1.0,<,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 74,ASP,74,3.5,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 92,ASP,92,4.3,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 97,ASP,97,2.9,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 107,ASP,107,1.0,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 113,ASP,113,4.0,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 117,GLU,117,3.5,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 121,ASP,121,1.0,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 126,ASP,126,1.0,<,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 127,ASP,127,8.0,>,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 149,ASP,149,3.9,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 162,GLU,162,3.1,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 164,ASP,164,2.9,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 172,ASP,172,6.2,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 181,GLU,181,3.6,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 183,GLU,183,5.3,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 195,ASP,195,3.9,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 201,GLU,201,4.9,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 212,GLU,212,4.9,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 221,ASP,221,4.5,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 233,GLU,233,4.1,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 256,ASP,256,8.0,>,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 266,ASP,266,3.5,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 282,ASP,282,3.6,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 284,GLU,284,3.8,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 288,ASP,288,2.6,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 290,ASP,290,3.2,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,GLU 296,GLU,296,8.0,>,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 312,ASP,312,8.0,>,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 319,ASP,319,2.7,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 321,ASP,321,3.6,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 329,ASP,329,3.7,,yes,CpHMD
+OmpF,ompf,3pox_trimer.pdb,ABC,ASP 330,ASP,330,6.5,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,LYS 94,LYS,94,9.16,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,HIS 99,HIS,99,7.17,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,ASP 112,ASP,112,2.05,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,GLU 119,GLU,119,6.85,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,ASP 123,ASP,123,5.85,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,LYS 125,LYS,125,10.62,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,ASP 130,ASP,130,7.25,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,LYS 131,LYS,131,8.54,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,HIS 140,HIS,140,5.35,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,GLU 153,GLU,153,4.67,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,LYS 157,LYS,157,5.57,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,GLU 164,GLU,164,5.11,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,HIS 167,HIS,167,7.0,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,HIS 168,HIS,168,6.16,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,LYS 169,LYS,169,10.59,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,GLU 171,GLU,171,3.73,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,ASP 174,ASP,174,2.49,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,ASP 185,ASP,185,2.46,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,GLU 192,GLU,192,6.51,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,HIS 193,HIS,193,6.96,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,GLU 196,GLU,196,8.34,,yes,CpHMD
+HV1 (AlphaFold),hv1,hv1_af.pdb,A,LYS 221,LYS,221,9.78,,yes,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,LYS 94,LYS,94,9.16,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,HIS 99,HIS,99,7.17,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,ASP 112,ASP,112,2.05,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,GLU 119,GLU,119,6.85,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,ASP 123,ASP,123,5.85,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,LYS 125,LYS,125,10.62,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,ASP 130,ASP,130,7.25,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,LYS 131,LYS,131,8.54,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,HIS 140,HIS,140,5.35,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,GLU 153,GLU,153,4.67,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,LYS 157,LYS,157,5.57,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,GLU 164,GLU,164,5.11,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,HIS 167,HIS,167,7.0,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,HIS 168,HIS,168,6.16,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,LYS 169,LYS,169,10.59,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,GLU 171,GLU,171,3.73,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,ASP 174,ASP,174,2.49,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,ASP 185,ASP,185,2.46,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,GLU 192,GLU,192,6.51,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,HIS 193,HIS,193,6.96,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,GLU 196,GLU,196,8.34,,no,CpHMD
+HV1 (5OQK),hv1_5oqk,5oqk.pdb,A,LYS 221,LYS,221,9.78,,no,CpHMD
+NhaA,nhaa,4au5.pdb,AB,Lys300,LYS,300,11.6,,yes,CpHMD
+NhaA,nhaa,4au5.pdb,AB,Asp163,ASP,163,4,<,yes,CpHMD
+NhaA,nhaa,4au5.pdb,AB,Glu78,GLU,78,4,<,yes,CpHMD
+blind,pr,pr2l6x.pdb,A,PR Asp97,ASP,97,6.4,,yes,experiment
+blind,emre,emre8uoz.pdb,A,EmrE Glu14,GLU,14,7.0,,yes,experiment
+blind,bm2,bm2kix.pdb,A,BM2 His27,HIS,27,7.9,,yes,experiment

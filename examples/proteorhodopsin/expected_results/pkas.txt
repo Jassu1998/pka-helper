@@ -1,0 +1,34 @@
+pka-helper 0.1.1a1   input: proteorhodopsin_2l6x.pdb
+
+pH 7.0: 25 titratable groups, 22 confident, 3 uncertain (within 0.5 pK of pH or predictors disagree).
+'±' = estimated error (1 sigma, pK): about 2 in 3 true values lie within it and 19 in 20 within twice it, on the benchmark (tested on protein families left out of the fit). It grows for buried groups, His, membrane runs and when PROPKA and DelPhi disagree. 'P(prot)' = probability that the group is protonated at pH 7.0 from that error; near 0.5 the call is open. 'limits varied' = lowest - highest pKa when pka-helper's own limits on the DelPhi shift are varied ('unaffected' = the same with every setting); '!' = the pH 7.0 call flips within that range.
+State: P = protonated, D = deprotonated, ? = uncertain.   shift = pKa - PROPKA.   'check' = a structure warning (results/structure_check.txt).
+
+All groups
+
+  residue   chain  PROPKA  DelPhi     pKa      ± P(prot)  state limits varied  note
+  ARG51     A       12.45    9.98   11.45  ±1.37   >0.99  P     10.45 - 11.95  
+  ARG53     A       12.58   12.02   12.02  ±1.09   >0.99  P     12.02 - 12.08  
+  ARG80     A        9.85   10.75   10.75  ±2.48    0.94  P     unaffected     
+  ARG94     A       11.88   10.51   10.51  ±2.63    0.91  P     unaffected     
+  ASP24     A        3.91    4.45    4.07  ±1.09   <0.01  D     unaffected     
+  ASP27     A        4.06    4.42    4.17  ±1.05   <0.01  D     unaffected     
+  ASP52     A        3.75    4.05    3.84  ±1.04   <0.01  D     unaffected     
+  ASP88     A        3.98    4.47    4.13  ±1.08   <0.01  D     unaffected     
+  ASP97     A        5.97   10.00    6.47  ±3.26    0.44  D     6.22 - 6.97    
+  ASP212    A        3.84    4.58    4.58  ±1.12    0.02  D     4.34 - 4.58    carboxylate pair: full upward bound
+  ASP227    A        8.23    4.41    4.41  ±3.22    0.21  D?    4.41 - 5.73    
+  GLU50     A        4.87    5.46    5.05  ±1.10    0.04  D     unaffected     
+  GLU85     A        4.68    5.00    4.78  ±1.04    0.02  D     unaffected     
+  GLU108    A        4.98   11.98    7.98  ±1.73    0.71  P?    6.98 - 8.98 !  lipid-facing: larger cap
+  GLU142    A        4.64    5.08    4.77  ±1.07    0.02  D     unaffected     
+  GLU165    A        3.65    4.83    4.00  ±1.20    0.01  D     3.90 - 4.00    
+  GLU170    A        4.63    4.59    4.59  ±0.97    0.01  D     unaffected     
+  GLU245    A        4.12    4.59    4.26  ±1.07    0.01  D     unaffected     
+  HIS75     A        6.01  -7.00*    6.01  ±2.27    0.33  D     unaffected     check: deep-lipid saturated; His: DelPhi saturated below 0, PROPKA ke
+  LYS57     A       10.34   10.08   10.34  ±1.03   >0.99  P     unaffected     
+  LYS59     A       10.36    9.97   10.36  ±1.05   >0.99  P     unaffected     
+  LYS125    A       10.74   10.23   10.23  ±1.08   >0.99  P     10.23 - 10.42  
+  LYS126    A        7.91    7.16    7.16  ±2.42    0.53  P?    unaffected     
+  LYS172    A       10.19   10.21   10.21  ±0.97   >0.99  P     unaffected     
+  LYS244    A       10.51   10.22   10.51  ±1.03   >0.99  P     unaffected     

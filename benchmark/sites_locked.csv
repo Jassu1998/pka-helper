@@ -1,0 +1,6 @@
+protein,structure,chains,site,resname,resnum,ref,bound,source,structure_matches_measurement,note
+bR,1m0l.pdb,ABC,bR Asp85,ASP,85,2.5,<,experiment (ground state),yes,
+bR,1m0l.pdb,ABC,bR Asp96,ASP,96,12,>,experiment (ground state),yes,
+bR,1m0l.pdb,ABC,bR Asp212,ASP,212,3,<,experiment (ground state),yes,
+LacY,4oaa.pdb,A,LacY Glu325,GLU,325,10.5,,experiment (measured in LacY G46W/G262W),yes,4OAA = the G46W/G262W mutant (bound TDG left out; the measured pKa is insensitive to galactoside)
+LacY,2v8n.pdb,A,LacY Glu325 (2V8N),GLU,325,10.5,,experiment (measured in LacY G46W/G262W),no,2V8N is the inward-facing state; the pKa was measured in the G46W/G262W mutant locked in another conformation

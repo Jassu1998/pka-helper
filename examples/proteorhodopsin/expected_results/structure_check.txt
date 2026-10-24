@@ -1,0 +1,11 @@
+Structure checks (what each one means: README.md, section 'Structure checks')
+
+input (1)
+               HETATM groups kept with a fixed charge (not titrated): LYR (+1) x1
+
+deep-lipid (1)
+  HIS75 A      faces the lipid 8 A inside the membrane core (35% of its surroundings is lipid): the result depends strongly on the membrane position and the side-chain orientation; check them (e.g. --membrane-scan)
+
+saturated (1)
+  HIS75 A      DelPhi value -7.00* is at the edge of its range: only 'very low' is known
+

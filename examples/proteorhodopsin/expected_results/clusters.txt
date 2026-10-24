@@ -1,0 +1,13 @@
+Coupled groups (DelPhi titration): sites closer than 5 A (titrating atoms), or the same residue in several chains within 12 A.
+An experiment that titrates such a group sees the MACROSCOPIC steps (protons lost one by one, highest first), not the per-residue pKas.
+These come from DelPhi alone (no PROPKA blend); compare them with stepwise measurements (e.g. the four pKas of a His tetrad).
+
+ASP0022A ASP0212A
+    per residue: ASP0022A=4.92 ASP0212A=4.59
+    macroscopic: 5.30 4.27   (mean 4.79)
+ASP0097A HIS0075A
+    per residue: ASP0097A=10.04 HIS0075A=<0
+    macroscopic: 10.04 <0   (mean 5.02)
+GLU0165A LYS0125A
+    per residue: GLU0165A=4.71 LYS0125A=10.38
+    macroscopic: 10.38 4.71   (mean 7.55)

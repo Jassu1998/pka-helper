@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use pka-helper, please cite it as below, and also cite PROPKA and DelPhiPKa (see NOTICE.md)."
+title: "pka-helper: membrane-aware pKa prediction"
+type: software
+version: 0.1.1a1
+date-released: 2026-10-24
+license: MIT
+abstract: >-
+  pka-helper predicts pKa values and protonation states of Asp, Glu, His, Lys and Arg in membrane and soluble proteins. It starts from PROPKA and lets a Poisson–Boltzmann calculation in an explicit membrane model adjust each value only as far as benchmarks justify, and gives an error estimate for every group.
+keywords:
+  - pKa
+  - protonation state
+  - membrane proteins
+  - Poisson-Boltzmann
+  - PROPKA
+  - DelPhiPKa
+authors:
+  - family-names: "Aaltonen"
+    given-names: "Jasmine"
+references:
+  - type: article
+    title: "PROPKA3: Consistent Treatment of Internal and Surface Residues in Empirical pKa Predictions"
+    authors:
+      - family-names: Olsson
+        given-names: Mats H. M.
+      - family-names: Søndergaard
+        given-names: Chresten R.
+      - family-names: Rostkowski
+        given-names: Michal
+      - family-names: Jensen
+        given-names: Jan H.
+    journal: "Journal of Chemical Theory and Computation"
+    volume: 7
+    start: 525
+    year: 2011
+    doi: 10.1021/ct100578z
+  - type: article
+    title: "DelPhiPKa web server: predicting pKa of proteins, RNAs and DNAs"
+    authors:
+      - family-names: Wang
+        given-names: Lin
+      - family-names: Zhang
+        given-names: Min
+      - family-names: Alexov
+        given-names: Emil
+    journal: "Bioinformatics"
+    volume: 32
+    start: 614
+    year: 2016
+    doi: 10.1093/bioinformatics/btv607

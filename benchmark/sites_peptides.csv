@@ -1,0 +1,16 @@
+case,lipid,structure,core_thickness,resname,resnum,ref,bound,kind
+H12,dopc,gw_H12.pdb,28.8,HIS,12,2.5,,exp
+H14,dopc,gw_H14.pdb,28.8,HIS,14,4.1,,exp
+H16,dopc,gw_H16.pdb,28.8,HIS,16,3.5,,exp
+H8,dlpc,gw_H8.pdb,20.8,HIS,8,3.6,<,exp
+H8,dmpc,gw_H8.pdb,25.4,HIS,8,3.2,<,exp
+K12,dopc,gw_K12.pdb,28.8,LYS,12,6.8,,exp
+K14,dopc,gw_K14.pdb,28.8,LYS,14,6.8,,exp
+K12,dopc,gw_K12.pdb,28.8,LYS,12,5.7,,cphmd
+K14,dopc,gw_K14.pdb,28.8,LYS,14,5.6,,cphmd
+H12,dopc,gw_H12.pdb,28.8,HIS,12,4.0,,cphmd
+H14,dopc,gw_H14.pdb,28.8,HIS,14,4.5,,cphmd
+E12,dlpc,gw_E12.pdb,20.8,GLU,12,9.8,,cphmd
+E14,dlpc,gw_E14.pdb,20.8,GLU,14,9.7,,cphmd
+D12,dlpc,gw_D12.pdb,20.8,ASP,12,9.4,,cphmd
+D14,dlpc,gw_D14.pdb,20.8,ASP,14,9.4,,cphmd

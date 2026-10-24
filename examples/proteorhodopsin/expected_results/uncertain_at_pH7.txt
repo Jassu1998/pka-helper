@@ -1,0 +1,27 @@
+Groups whose pH 7.0 call differs between PROPKA, the raw DelPhi value and the final pKa
+
+3 of 25 groups, in three kinds. * = DelPhi value saturated (its limits are 0 and 16).
+'more reliable' is a rule-of-thumb read-out of the 69-site benchmark (heuristic, not a validated classifier).
+
+1. Lipid-facing acids and lysines: the final call follows DelPhi (1 groups)
+   Reason (Asp/Glu): lipid-facing with no cation partner, so nothing stabilises the charge and a large upward shift is plausible (supported by c-ring Glu58, VDAC1 Glu73, Hv1 Glu196 and bR Asp96; wrong for Hv1 Glu153)
+   pka-helper is probably the more reliable predictor here. The cap on DelPhi's shift (upward for acids, downward for Lys) was lifted for these groups.
+
+  residue   chain  PROPKA  DelPhi   final  final   environment
+  GLU108    A        4.98   11.98    7.98  P?      burial 6%; lipid 47%; cations<8A 0; 4.0 A inside the membrane core
+
+2. DelPhi moved the call and nothing says which is right (1 groups) -- the ones to look at
+   The final pKa follows DelPhi. Environment and benchmark give no clear rule (details per group below).
+
+  residue   chain  PROPKA  DelPhi   final  final   environment
+  ASP227    A        8.23    4.41    4.41  D?      burial 100%; lipid 1%; cations<8A 2; 4.2 A inside the membrane core
+
+   ASP227:A: DelPhi lowered this acid by 3.8 pK; on the benchmark such downward shifts improved 24 acids and worsened 8 (mostly acids whose measured pKa is raised by effects the continuum model misses, e.g. the catalytic Glu35 of lysozyme)
+
+3. DelPhi disagreed but the bound kept PROPKA's call (1 groups) -- no action needed
+   The raw DelPhi value is on the other side of pH 7.0, usually because it failed (saturated or an extreme value);
+   the final pKa stays close to PROPKA and the call is not in doubt.
+
+  residue   chain  PROPKA  DelPhi   final  final   environment
+  ASP97     A        5.97   10.00    6.47  D       burial 51%; lipid 26%; cations<8A 3; 8.3 A inside the membrane core
+
