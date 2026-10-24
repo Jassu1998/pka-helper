@@ -1,0 +1,40 @@
+{
+  "title": "pka-helper: membrane-aware pKa prediction",
+  "upload_type": "software",
+  "license": "MIT",
+  "description": "<p>pka-helper predicts pKa values and protonation states of Asp, Glu, His, Lys and Arg in membrane and soluble proteins. It starts from PROPKA and lets a Poisson–Boltzmann calculation in an explicit membrane model adjust each value only as far as benchmarks justify, and gives an error estimate for every group.</p><p>Alpha release. DelPhiPKa is not included: the installer downloads it from its authors and applies pka-helper's patch. The archive includes the benchmark structures, reference values and script to reproduce the reported numbers.</p>",
+  "keywords": [
+    "pKa",
+    "protonation state",
+    "membrane proteins",
+    "Poisson-Boltzmann",
+    "PROPKA",
+    "DelPhiPKa"
+  ],
+  "creators": [
+    {
+      "name": "Aaltonen, Jasmine"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1021/ct100578z",
+      "relation": "requires",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1093/bioinformatics/btv607",
+      "relation": "requires",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://github.com/delphi001/DelphiPka",
+      "relation": "requires",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ],
+  "version": "0.1.1a1"
+}
