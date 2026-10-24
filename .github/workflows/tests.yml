@@ -1,0 +1,37 @@
+name: tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: System packages (compiler, MPI, GSL)
+        run: sudo apt-get update && sudo apt-get install -y git build-essential libopenmpi-dev openmpi-bin libgsl-dev
+      - name: Install pka-helper (downloads, patches and compiles DelPhiPKa)
+        run: pip install . pytest
+      - name: Check the installation
+        run: pka-helper doctor
+      - name: Unit tests
+        run: pytest -q tests
+      - name: Example reproduces the expected results
+        run: |
+          cd examples/proteorhodopsin
+          pka-helper run proteorhodopsin_2l6x.pdb --np 2
+          python - <<'PY'
+          import csv, glob, sys
+          key = lambda r: (r["residue"], r["chain"])
+          new = {key(r): (r["blended"], r["sigma"]) for r in csv.DictReader(open(glob.glob("*_pka/results/pka_helper.csv")[0]))}
+          old = {key(r): (r["blended"], r["sigma"]) for r in csv.DictReader(open("expected_results/pka_helper.csv"))}
+          bad = [k for k in old if new.get(k) != old[k]]
+          print(len(old), "groups;", "differ:", bad)
+          sys.exit(1 if bad else 0)
+          PY
