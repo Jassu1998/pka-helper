@@ -5,19 +5,20 @@ on:
   workflow_dispatch:
 jobs:
   linux:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
+      fail-fast: false
       matrix:
         python-version: ["3.10", "3.12"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
-      - name: System packages (compiler, MPI, GSL)
-        run: sudo apt-get update && sudo apt-get install -y git build-essential libopenmpi-dev openmpi-bin libgsl-dev
+      - name: System packages (compiler, MPI, GSL, Boost)
+        run: sudo apt-get update && sudo apt-get install -y git build-essential libopenmpi-dev openmpi-bin libgsl-dev libboost-dev
       - name: Install pka-helper (downloads, patches and compiles DelPhiPKa)
-        run: pip install . pytest
+        run: pip install -v . pytest
       - name: Check the installation
         run: pka-helper doctor
       - name: Unit tests
@@ -25,7 +26,7 @@ jobs:
       - name: Example reproduces the expected results
         run: |
           cd examples/proteorhodopsin
-          pka-helper run proteorhodopsin_2l6x.pdb --np 2
+          pka-helper run proteorhodopsin_2l6x.pdb --np 2 --oversubscribe || { tail -n 60 proteorhodopsin_2l6x_pka/raw/log.txt; exit 1; }
           python - <<'PY'
           import csv, glob, sys
           key = lambda r: (r["residue"], r["chain"])
